@@ -12,7 +12,7 @@ func GenerateUrlData(str string) error {
 		return err		
 	} else {
 		count := 0
-		for count < 1000 {
+		for count < 500 {
 			for iter:=count; iter>=0; iter--{
 				_, err = f.Write([]byte("https://dinghao.li.github.io/" + strconv.Itoa(count) + "\n"))
 				if err != nil {
